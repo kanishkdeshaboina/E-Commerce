@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add to your existing head section -->
+    <meta name="theme-color" content="#333"> <!-- Mobile browser theme color -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"> <!-- iOS home screen icon -->
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Enable standalone mode for iOS -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>MyShop - Your Ultimate Online Store</title>
+    <link rel="stylesheet" href="coms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Added inline styles for cart and wishlist icons and count */
+        .nav-links li a .icon {
+            font-size: 1.2rem;
+            margin-left: 5px;
+        }
+        .nav-links li a .cart-count {
+            background-color: #f44336;
+            color: white;
+            border-radius: 50%;
+            padding: 3px 6px;
+            font-size: 0.8rem;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1 class="myshop">MyShopify</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="cart.html">Cart <span class="cart-count">(0)</span></a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <section id="home" class="hero-content">
+            <h1 class="hero-title">Discover the Best Online Shopping Experience</h1>
+            <p class="hero-subtitle">Find everything you need at unbeatable prices. Shop now and elevate your lifestyle.</p>
+            <a href="#fd" class="hero-button">Explore Products</a>
+        </section>
+    </main>
+
+    <section id="products" class="categories">
+        <div class="product-header">
+            <h2>Product Categories</h2>
+            <hr class="section-divider">
+        </div>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://image.pollinations.ai/prompt/Electronics,gadgets?width=400&height=300&nologo=true" alt="Electronics" class="category-image">
+                <div class="category-info">
+                    <h3>Electronics</h3>
+                    <a href="electronics.html" class="category-button">Explore</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Fashion" class="category-image">
+                <div class="category-info">
+                    <h3>Fashion</h3>
+                    <a href="fashion.html?category=fashion" class="category-button">Shop Now</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://image.pollinations.ai/prompt/Home,Kitchen,appliances?width=400&height=300&nologo=true" alt="Home & Kitchen" class="category-image">
+                <div class="category-info">
+                    <h3>Home & Kitchen</h3>
+                    <a href="homek.html?category=home%20and%20kitchen" class="category-button">Discover</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://image.pollinations.ai/prompt/beauty,makeup,cosmetics?width=400&height=300&nologo=true" alt="Beauty" class="category-image">
+                <div class="category-info">
+                    <h3>Beauty</h3>
+                    <a href="beauty.html?category=beauty" class="category-button">View All</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fd" class="featured-products">
+        <div class="product-header">
+            <h2>Featured Products</h2>
+            <hr class="section-divider">
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Premium Headphones" class="product-image">
+                <span class="product-label sale">Sale</span>
+                <div class="product-info">
+                    <h3>Premium Headphones</h3>
+                    <p class="product-price">$99.99</p>
+                    <div class="product-rating">
+                        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                    </div>
+                    <button class="product-button add-to-cart" data-id="1" data-name="Premium Headphones" data-price="99.99" data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Smart Watch" class="product-image">
+                <span class="product-label popular">Popular</span>
+                <div class="product-info">
+                    <h3>Smart Watch</h3>
+                    <p class="product-price">$149.99</p>
+                    <div class="product-rating">
+                        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
+                    </div>
+                    <button class="product-button add-to-cart" data-id="2" data-name="Smart Watch" data-price="149.99" data-image="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Laptop Pro" class="product-image">
+                <span class="product-label deal">Deal</span>
+                <div class="product-info">
+                    <h3>Laptop Pro</h3>
+                    <p class="product-price">$899.99</p>
+                    <div class="product-rating">
+                        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                    </div>
+                    <button class="product-button add-to-cart" data-id="3" data-name="Laptop Pro" data-price="899.99" data-image="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://image.pollinations.ai/prompt/Wireless,Earbuds,in,ear?width=400&height=300&nologo=true" alt="Wireless Earbuds" class="product-image">
+                <div class="product-info">
+                    <h3>Wireless Earbuds</h3>
+                    <p class="product-price">$59.99</p>
+                    <div class="product-rating">
+                        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span><span class="star">&#9734;</span>
+                    </div>
+                    <button class="product-button add-to-cart" data-id="4" data-name="Wireless Earbuds" data-price="59.99" data-image="https://image.pollinations.ai/prompt/Wireless,Earbuds,in,ear?width=400&height=300&nologo=true">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates on new products and exclusive deals.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MyShopify</h3>
+                <p>Your ultimate online shopping destination, offering a wide range of products at unbeatable prices.</p>
+                <div class="social-links">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="pinterest-icon.png" alt="Pinterest"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 Main Street, City, Country</p>
+                <p>+1 234 567 890</p>
+                <p>info@myshopify.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 MyShopify. All Rights Reserved.</p>
+            <div class="payment-icons">
+                <img src="visa-icon.png" alt="Visa">
+                <img src="mastercard-icon.png" alt="Mastercard">
+                <img src="paypal-icon.png" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

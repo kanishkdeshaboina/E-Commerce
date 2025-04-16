@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - MyShopify</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+    <style>
+        /* Inline styles to ensure base styling works */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <header class="admin-header">
+        <div class="container">
+            <div class="admin-header-content">
+                <h1 class="admin-logo">Admin Panel - MyShopify</h1>
+                <button id="logout-btn" class="admin-logout-btn">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <div class="container">
+            <div class="admin-grid">
+                <section class="admin-form-section">
+                    <div class="admin-card">
+                        <h2 class="admin-section-title">Add New Product</h2>
+                        <form id="add-product-form" class="admin-form">
+                            <div class="form-group">
+                                <label for="product-name" class="form-label">Product Name:</label>
+                                <input type="text" id="product-name" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-price" class="form-label">Price:</label>
+                                <input type="number" id="product-price" class="form-input" min="0.01" step="0.01" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-image" class="form-label">Product Image:</label>
+                                <input type="file" id="product-image" class="form-input-file" accept="image/*">
+                                <small class="form-hint">Select an image file (jpg, png, gif, etc.)</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-category" class="form-label">Category:</label>
+                                <select id="product-category" class="form-select">
+                                    <option value="electronics">Electronics</option>
+                                    <option value="fashion">Fashion</option>
+                                    <option value="home and kitchen">Home & Kitchen</option>
+                                    <option value="beauty">Beauty</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-description" class="form-label">Description:</label>
+                                <textarea id="product-description" class="form-textarea"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-label" class="form-label">Label (Optional):</label>
+                                <select id="product-label" class="form-select">
+                                    <option value="">None</option>
+                                    <option value="sale">Sale</option>
+                                    <option value="popular">Popular</option>
+                                    <option value="deal">Deal</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-discount" class="form-label">Discount (%):</label>
+                                <input type="number" id="product-discount" class="form-input" min="0" max="100" step="5" value="0">
+                            </div>
+
+                            <button type="submit" class="admin-btn admin-btn-primary">Add Product</button>
+                        </form>
+                        <div id="add-product-message" class="admin-message"></div>
+                    </div>
+                </section>
+
+                <section class="admin-products-section">
+                    <div class="admin-card">
+                        <h2 class="admin-section-title">Manage Products</h2>
+                        <div id="product-list" class="admin-products-grid">
+                            <!-- Products will be loaded here -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="admin-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> MyShopify. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="admin.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

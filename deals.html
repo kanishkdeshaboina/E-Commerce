@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Deals - MyShopify</title>
+    <link rel="stylesheet" href="deals.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container">
+            <h1 class="site-logo">MyShopify</h1>
+            <ul class="nav-links">
+                <li><a href="com.html#home">Home</a></li>
+                <li><a href="com.html#products">Products</a></li>
+                <li><a href="deals.html" class="nav-active">Deals</a></li>
+                <li><a href="#">Wishlist <span class="nav-icon">&#9825;</span></a></li>
+                <li><a href="cart.html">Cart <span class="nav-icon">&#128722;</span> <span class="cart-count">(0)</span></a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="deal-banner">
+            <div class="container">
+                <h1 class="deal-banner-title">MEGA DEAL DAYS</h1>
+                <p class="deal-banner-text">Limited time offers on your favorite products. Don't miss out on these exclusive discounts!</p>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="days">00</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">00</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">00</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">00</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="deals-section">
+            <div class="container">
+                <div class="deal-tabs">
+                    <button class="deal-tab deal-tab-active" data-category="all">All Deals</button>
+                    <button class="deal-tab" data-category="electronics">Electronics</button>
+                    <button class="deal-tab" data-category="fashion">Fashion</button>
+                    <button class="deal-tab" data-category="beauty">Beauty</button>
+                    <button class="deal-tab" data-category="home">Home & Kitchen</button>
+                </div>
+
+                <div class="product-grid" id="deals-container">
+                    <!-- Deals will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">MyShopify</h3>
+                    <p class="footer-text">Your ultimate online shopping destination with the best deals and discounts.</p>
+                    <div class="social-links">
+                        <a href="#"><img src="images/facebook-icon.png" alt="Facebook" class="social-icon"></a>
+                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter" class="social-icon"></a>
+                        <a href="#"><img src="images/instagram-icon.png" alt="Instagram" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <a href="com.html" class="footer-link">Home</a>
+                    <a href="deals.html" class="footer-link">Today's Deals</a>
+                    <a href="com.html#products" class="footer-link">Categories</a>
+                    <a href="#" class="footer-link">About Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Customer Service</h3>
+                    <a href="#" class="footer-link">Contact Us</a>
+                    <a href="#" class="footer-link">FAQs</a>
+                    <a href="#" class="footer-link">Shipping Policy</a>
+                    <a href="#" class="footer-link">Returns & Refunds</a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <p class="footer-text">123 Main Street, City</p>
+                    <p class="footer-text">Email: info@myshopify.com</p>
+                    <p class="footer-text">Phone: +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year"></span> MyShopify. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="deals.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

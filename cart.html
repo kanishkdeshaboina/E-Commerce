@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - MyShopify</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1 class="myshop">MyShopify</h1>
+            <ul class="nav-links">
+                <li><a href="com.html#home">Home</a></li>
+                <li><a href="com.html#products">Products</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Wishlist <span class="icon">&#9825;</span></a></li>
+                <li><a href="cart.html">Cart <span class="icon">&#128722;</span> <span class="cart-count">(0)</span></a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cart-page">
+        <h1>Your Shopping Cart</h1>
+        <div class="cart-items">
+            <p class="empty-cart">Your cart is currently empty.</p>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <hr>
+            <div class="summary-item">
+                <span>Subtotal:</span>
+                <span class="subtotal">$0.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Shipping:</span>
+                <span>Calculated at Checkout</span>
+            </div>
+            <hr>
+            <div class="summary-item total">
+                <span>Total:</span>
+                <span class="total-price">$0.00</span>
+            </div>
+            <button class="checkout-button" disabled>Proceed to Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MyShopify. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+
+</body>
+</head>

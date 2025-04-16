@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion - MyShopify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1 class="myshop">MyShopify</h1>
+            <ul class="nav-links">
+                <li><a href="com.html#home">Home</a></li>
+                <li><a href="com.html#products">Products</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="#">Wishlist <span class="icon">&#9825;</span></a></li>
+                <li><a href="cart.html">Cart <span class="cart-count">(0)</span></a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="featured-products">
+        <div class="product-header">
+            <h2>Fashion Products</h2>
+            <hr class="section-divider">
+        </div>
+        <div class="product-grid" id="category-products">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
+    </section>
+
+    <script src="category.js"></script>
+</body>
+</html>

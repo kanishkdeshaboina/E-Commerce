@@ -1,0 +1,246 @@
+/* cart.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.container {
+    color: white;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.myshop {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ddd;
+}
+
+.nav-links li a .icon {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.nav-links li a .cart-count {
+    background-color: #f44336;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 0.8rem;
+    vertical-align: middle;
+}
+
+.cart-page {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cart-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4a90e2;
+}
+
+.cart-items {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.empty-cart {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.item-details p {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.item-price {
+    font-weight: 600;
+    color: #bd3935;
+    margin-right: 15px;
+}
+
+.cart-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.quantity-control button {
+    background: none;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-control button:hover {
+    background-color: #eee;
+}
+
+.quantity-control span {
+    padding: 8px 10px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    color: #f44336;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.remove-button:hover {
+    color: #d32f2f;
+}
+
+.cart-summary {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin-left: auto;
+}
+
+.cart-summary h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #4a90e2;
+    text-align: center;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.summary-item.total {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.checkout-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.checkout-button:hover {
+    background-color: #43A047;
+}
+
+.checkout-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer .container {
+    display: block;
+    justify-content: center;
+}

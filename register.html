@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - MyShop</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- Add Google Identity Services library -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <label for="registerFullName">Full name:</label>
+            <input type="text" id="registerFullName" placeholder="Enter your name" required><br><br>
+
+            <label for="registerUsername">Username:</label>
+            <input type="text" id="registerUsername" placeholder="Enter your Username" required><br><br>
+
+            <label for="registerPassword">Create Password:</label>
+            <input type="password" id="registerPassword" placeholder="Enter your password" required><br><br>
+
+            <label for="registerConfirmPassword">Re-enter Password:</label>
+            <input type="password" id="registerConfirmPassword" placeholder="Re-enter your password" required><br><br>
+
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+        
+        <!-- Google Sign-Up Button -->
+        <div id="g_id_onload"
+             data-client_id="YOUR_GOOGLE_CLIENT_ID"
+             data-context="signup"
+             data-ux_mode="popup"
+             data-callback="handleGoogleSignIn"
+             data-auto_prompt="false">
+        </div>
+
+        <div class="g_id_signin"
+             data-type="standard"
+             data-shape="rectangular"
+             data-theme="outline"
+             data-text="signup_with"
+             data-size="large"
+             data-logo_alignment="left">
+        </div>
+    </div>
+    <script src="script2.js"></script>
+    <script src="google_auth.js"></script>
+</body>
+</html>
